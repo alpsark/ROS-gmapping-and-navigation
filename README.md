@@ -10,14 +10,14 @@ run roscore
 run vrep, open scenes/assignment7.ttt  
 . ~/ros-ws/devel/setup.bash  
 
-*To gmapping:* we need 2 consoles  
+**To gmapping:** we need 2 consoles  
 rviz  
 roslaunch nav_stack_tuning gmapping.launch    
 
 then we can move the robot with arrow keys  
 
-Constructed map can be save with *rosrun map_server map_saver -f <map directory>/map* without closing the roslaunch or rviz.    
-*To navigation:*we need three consoles  
+Constructed map can be save with **rosrun map_server map_saver -f <map directory>/map** without closing the roslaunch or rviz.    
+**To navigation:** we need three consoles  
 rviz  
 roslaunch nav_stack_tuning amcl.launch    
 roslaunch nav_stack_tuning mave_base.launch    
